@@ -31,6 +31,6 @@ else if(userState.toUpperCase() !== userState){
 
 var userMarried = prompt("Are you married? Please answer yes or no - caps doesn't matter.")
 
-if(userMarried != "yes" || userMarried != "no"){
+if(userMarried.toUpperCase() !== "YES" || userMarried.toUpperCase() !== "NO"){
 	alert("We asked you a simple question. Are you married? Yes or no. You failed.");
 }
