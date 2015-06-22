@@ -23,6 +23,14 @@ if(!isNumber(userPostalCode)){
 var userState = prompt("Please enter your state using two letters all caps, i.e. 'CA'.");
 
 if(userState.length !== 2){
-	alert("You did not enter a valid state abreviation.")
+	alert("You did not enter a valid state abreviation.");
 }
-else if(userState)
+else if(userState.toUpperCase() !== userState){
+	alert("You need to use all caps for the state.");
+}
+
+var userMarried = prompt("Are you married? Please answer yes or no - caps doesn't matter.")
+
+if(userMarried != "yes" || userMarried != "no"){
+	alert("We asked you a simple question. Are you married? Yes or no. You failed.");
+}
